@@ -1,0 +1,499 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Montserrat", sans-serif;
+    list-style: none;
+    text-decoration: none;
+    
+    
+    
+}
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10%;
+    background-color: rgb(110, 8, 110);
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+   
+}
+.arasu1 {
+    color:yellow;
+    
+    
+}
+.arasu1 span{
+    color:white;
+}
+.arasu2{
+
+    display: flex;
+    
+}
+.arasu2 a{
+    color: white;
+    font-size: 16px;
+    text-transform: capitalize;
+    padding: 10px 20px;
+    font-weight: 400;
+    transition: all .42s ease;
+    
+}
+.arasu2 a:hover{
+    color:yellow;
+}
+.nav-icon{
+    display: flex;
+    align-items: center;
+}
+.nav-icon i{
+    margin-right: 20px;
+    color:white;
+    font-size: 20px;
+    font-weight: 400;
+    transition: all .42s ease;
+
+}
+.nav-icon i:hover{
+    transform: scale(1.1);
+    color:#EE1C47;
+}
+#menu-icon{
+    font-size: 25px;
+    color: whitesmoke;
+    z-index: 10001;
+    cursor: pointer;
+}
+#menu-icon:hover{
+    transform: scale(1.1);
+    color:#EE1C47;
+    
+}
+section{
+    padding: 5% 10%;
+}
+.main-home{
+    width: 100%;
+    height: 100vh;
+    background-image: url(image/ak.jpg);
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    align-items: center;
+    
+}
+.main-text h4{
+    color: #EE1C47;
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 500;
+    
+
+}
+.main-text h1{
+    color:rgb(98, 5, 98);
+    font-size: 50px;
+    line-height: 1.1;
+    font-weight: 600;
+    margin: 6px 0 10px;
+}
+.main-text p{
+    color: blue;
+    font-size: 20px;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+.main-btn{
+    display: inline-block;
+    color: rgb(98, 5, 98);
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    border: 2px solid;
+    padding: 10px 20px;
+    transition: all .42s ease;
+}
+.main-btn:hover{
+    background-color: rgb(98, 5, 98);
+    color: white;
+}
+.main-btn i{
+    vertical-align: middle;
+}
+.down-arrow{
+    position: absolute;
+    top: 85%;
+    right: 150px;
+}
+.down i{
+    font-size: 30px;
+    color: #2c2c2c;
+    border: 2px solid rgb(98, 5, 98);
+    border-radius: 50px;
+    padding: 12px 12px;
+    
+}
+.down i:hover{
+    background-color: rgb(98, 5, 98);
+    color: white;
+    transition: all .42s ease;
+}
+/* trending-section.css*/
+.center-text h2{
+    color: #111;
+    font-size: 28px;
+    text-transform: capitalize;
+    text-align: center;
+}
+.center-text span{
+    color: #EE1C47;
+}
+.products{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, auto));
+    gap: 2rem;
+    
+}
+.row{
+    position: relative;
+    transition: all .40s;
+}
+.row img{
+    width: 80%;
+    row-gap: 2px;
+    height: 50%;
+    transition: all .40s;
+}
+.row img:hover{
+    transform: scale(0.9);    
+}
+
+.product-text h5{
+    position: absolute;
+    top: 13px;
+    left: 13px;
+    color: white;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    background-color: #27b737;
+    padding: 3px 10px;
+    border-radius: 2PX;
+}
+.heart-icon{
+    position: absolute;
+    right: 35px;
+    font-size: 20px;
+    transition: all.40s;
+}
+.heart-icon:hover{
+    color: #EE1C47;
+    transform: scale(0.9);
+}
+
+.ratting i{
+    color:gold;
+    font-size: 18px;
+    
+}
+.price h4{
+    color: #111;
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+.price p{
+    color: #151515;
+    font-size: 14px;
+    font-weight: 600;
+}
+.client-reviews{
+    background-color: #f3f4f6;
+}
+.reviews{
+    text-align: center;
+}
+.reviews h3{
+    color: #111;
+    font-size: 25px;
+    text-transform: capitalize;
+    text-align: center;
+    font-weight: 700;
+}
+.reviews img{
+    width: 100px;
+    height: auto;
+    border-radius: 50px;
+    margin: 10px 0;
+}
+.reviews p{
+    color: #707070;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    margin-bottom: 10px;
+}
+.reviews h2{
+    font-size: 22px;
+    color: #EE1C47;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin-bottom: 2px;
+}
+
+/*update-section-css*/
+
+.up-center-text h2{
+    text-align: center;
+    color:red;
+    font-size: 25px;
+    text-transform: capitalize;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.cart img{
+    width: 380px;
+    height: auto;
+    border-radius: 5px;
+}
+.update-cart{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(380px, auto));
+    gap: 1rem;
+}
+.cart h5{
+    color: #636872;
+    font-size: 14px;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+.cart p{
+    color: #707070;
+    font-size: 15px;
+    max-width: 380px;
+    line-height: 25px;
+    margin-bottom: 12px;
+}
+
+/* contact-section */
+
+.contact{
+    background-color: #f3f4f6;
+}
+.contact-info{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, auto));
+    gap: 3rem;
+}
+.first-info h3{
+     
+    color: #EE1C47;
+    
+}
+#menu-icon{
+    display: none;
+}
+
+.side-navbar{
+    background-color: #632252;
+    width: 50%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0%;
+    padding: 80px;
+    color: white;
+    display: none;
+    z-index: 1;
+    
+    
+}
+.navbar-link1{
+    margin-bottom: 30px;
+    
+}
+.side-navbar-link a{
+    text-decoration: none;
+    color: white;
+}
+.side-navbar-link a:hover{
+    text-decoration: none;
+    color: white;
+    
+}
+
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #f1f1f1}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+  }
+
+/**media query**/
+
+@media screen and (max-width:600px){
+    #menu-icon{
+        display: block;
+    }
+    .arasu2{
+        display: none;
+    }
+    .manu{
+        display: none;
+    }
+
+}
+.manik{
+    text-align: center;
+    padding-top: 80px;
+       
+}
+.manik h2{
+    color: #EE1C47;
+}
+.manik p{
+    color:  rgb(110, 8, 110);
+}
+
+
+.manik .pro-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    flex-wrap: wrap;
+
+}
+
+.manik .pro{
+   width: 50px;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid violet;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow:20px 20px 30px rgba(0,0,0,0.02) ;
+    margin: 20px 0;
+    transition: 0.2s ease;
+    position: relative;
+    background-color: rgb(252, 240, 252);
+    
+}
+.manik .pro:hover{
+    box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+    
+}
+
+
+.manik .pro img{
+    width: 100%;
+    border-radius: 10px;
+    transition: all .40s;
+
+}
+.manik .pro img:hover{
+    transform: scale(0.9);
+}
+
+.manik .pro .des{
+           text-align: start;
+           padding: 10px 0;
+}
+
+.manik .pro .des span{
+    color: #900616;
+    font-size: 15px;
+
+}
+
+.manik .pro .des h5{
+    padding-top: 7px;
+    color: #1a1a1a;
+    font-size: 14px;
+}
+
+.manik .pro .des i{
+    font-size: 12px;
+    color:  #27b737;
+}
+
+.manik .pro .des h4{
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color:rgb(18, 18, 1) ;
+
+}
+
+.manik .pro .cart{
+    width: 40px;
+    height:40px ;
+    line-height: 40px;
+    border-radius: 10px;
+    background-color:rgb(110, 8, 110);
+    font-weight: 1000;
+    color:white;
+    border: 1px solid rgb(110, 8, 110);
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+    transition: all.40s;
+}
+.manik .pro .cart:hover{
+    transform: scale(0.9);
+    color: rgb(110, 8, 110);
+    background-color: white;
+    border-color: rgb(110, 8, 110);
+}
+.product-text h5{
+    position: absolute;
+    top: 13px;
+    left: 13px;
+    color: white;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    background-color: rgb(110, 8, 110);
+    padding: 3px 10px;
+    border-radius: 5PX;
+} 
